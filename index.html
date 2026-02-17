@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aquatic Ecosystem Project</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Segoe UI', sans-serif;
+                color: #021224;
+            }
+
+            body {
+                background: #c1e8ff;
+                color: #333;
+                line-height: 1.6;
+            }
+
+            /* Header */
+            header {
+                /* position: fixed; */
+                background-color: #052659;
+                color: white;
+                padding: 28px 20px;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 32px;
+                color: azure;
+                margin-bottom: 24x;
+                text-shadow: #00b4d8;
+            }
+
+            h1:hover {
+                color: aqua;
+            }
+
+
+            header p {
+                font-size: 10px;
+                margin-top: 10px;
+                color: azure;
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .head {
+                margin: 6px 18px;
+            }
+
+            .links {
+                color: white;
+                font-size: small;
+                font-weight: 500;
+                margin: 18px;
+                font-size: medium;
+                margin: 24px;
+
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .links:hover {
+                color: yellow;
+
+            }
+
+            /* Section Styling */
+            section {
+                padding: 50px 10%;
+            }
+
+            section h2 {
+                color: #021224;
+                margin-bottom: 20px;
+                border-left: 5px solid #00b4d8;
+                padding-left: 10px;
+            }
+
+            .card {
+                color: #021224;
+                background-color: whitesmoke;
+                padding: 25px;
+                margin-bottom: 25px;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                transition: 0.3s;
+            }
+
+            .card:hover {
+                transform: translateY(-5px);
+            }
+
+            /* Image Styling */
+            .section-img {
+                width: 80%;
+                border-radius: 12px;
+                margin: 20px 0;
+                border-radius: 4px;
+            }
+
+            img {
+                border-radius: 6px;
+            }
+
+            /* List Styling */
+            ul {
+                margin-left: 20px;
+                margin-top: 10px;
+            }
+
+            ul li {
+                margin-bottom: 8px;
+            }
+
+            /* Footer */
+            footer {
+                background: #052659;
+                text-align: center;
+                padding: 20px;
+                margin-top: 40px;
+            }
+
+            h3 {
+                color: azure;
+
+            }
+
+            /* Responsive */
+            @media(max-width:768px) {
+                section {
+                    padding: 40px 5%;
+                }
+
+                header h1 {
+                    font-size: 28px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header id="back">
+            <h1>Components Of Aquatic Ecosystem</h1>
+            <div class="container">
+
+                <a href="#intro">
+                    <div class="links">Introduction</div>
+                </a>
+                <a href="#ac">
+                    <div class="links">Abiotic Components</div>
+                </a>
+                <a href="#bc">
+                    <div class="links">Biotic Components</div>
+                </a>
+                <a href="#ae">
+                    <div class="links">Types of Aquatic Ecosystems</div>
+                </a>
+                <a href="#food">
+                    <div class="links">Food Chain & Food web</div>
+                </a>
+                <a href="#imp">
+                    <div class="links">Importance of Aquatic Ecosystems</div>
+                </a>
+                <a href="#human">
+                    <div class="links">Human Impact</div>
+                </a>
+            </div>
+
+        </header>
+
+        <section id="intro">
+            <h2>Introduction</h2>
+            <div class="card">
+                <img src="hero.jpg" height="100%" width="100%">
+                <p>
+                    An aquatic ecosystem is a community of living organisms interacting with water’s physical and
+                    chemical environment.
+                    It covers about 71% of Earth’s surface and includes freshwater and marine ecosystems.
+                </p>
+            </div>
+        </section>
+
+        <section id="ac">
+            <h2>1. Abiotic Components</h2>
+
+            <div class="card">
+                <h3>Water</h3>
+                <ul>
+                    <li>Medium for life</li>
+                    <li>Transports nutrients</li>
+                    <li>Regulates temperature</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Light</h3>
+                <ul>
+                    <li>Essential for photosynthesis</li>
+                    <li>Photic and Aphotic zones</li>
+                    <li>Controls productivity</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Temperature</h3>
+                <ul>
+                    <li>Affects metabolism</li>
+                    <li>Thermal stratification in lakes</li>
+                    <li>Impacts oxygen levels</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <img src="nutrients.jpg" alt="" srcset="">
+                <h3>Dissolved Gases & Nutrients</h3>
+                <ul>
+                    <li>Oxygen, Carbon dioxide, Nitrogen</li>
+                    <li>Nitrogen & Phosphorus support growth</li>
+                    <li>Excess causes eutrophication</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section id="bc">
+            <h2>2. Biotic Components</h2>
+            <div class="card">
+                <img src="aquatic.jpg" class="section-img">
+                <h3>Producers</h3>
+                <p>Phytoplankton, algae, aquatic plants. Base of food chain and oxygen producers.</p>
+            </div>
+
+            <div class="card">
+                <img src="consumers.jpg" alt="" srcset="">
+                <h3>Consumers</h3>
+                <ul>
+                    <li>Primary – Zooplankton</li>
+                    <li>Secondary – Small fish, frogs</li>
+                    <li>Tertiary – Sharks, dolphins</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <img src="decomposer.jpg" alt="" srcset="">
+                <h3>Decomposers</h3>
+                <p>Bacteria and fungi recycle nutrients and maintain ecosystem balance.</p>
+            </div>
+        </section>
+
+        <section id="ae">
+            <h2>3. Types of Aquatic Ecosystems</h2>
+
+            <div class="card">
+                <img src="aquaticEco.jpg" alt="" srcset="">
+                <h3>Freshwater Ecosystems</h3>
+                <ul>
+                    <li>Lentic – Lakes & Ponds</li>
+                    <li>Lotic – Rivers & Streams</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Marine Ecosystems</h3>
+                <ul>
+                    <li>Oceans</li>
+                    <li>Coral Reefs</li>
+                    <li>Estuaries</li>
+                    <li>Mangroves</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="food">
+            <h2>4. Food Chain</h2>
+            <div class="card">
+                <img src="foodChain.jpg" alt="" srcset="">
+                <p><strong>Phytoplankton → Zooplankton → Small Fish → Large Fish → Humans</strong></p>
+                <p>Food webs are more complex and increase ecosystem stability.</p>
+            </div>
+        </section>
+
+        <section id="imp">
+            <h2>5. Importance</h2>
+            <div class="card">
+                <img src="climate.jpg" alt="" srcset="">
+                <ul>
+                    <li>Climate regulation</li>
+                    <li>Food resources</li>
+                    <li>Biodiversity support</li>
+                    <li>Economic value</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="human">
+            <h2>6. Human Impact</h2>
+            <img src="hImpact.jpg" class="section-img">
+            <div class="card">
+                <ul>
+                    <li>Water pollution</li>
+                    <li>Overfishing</li>
+                    <li>Plastic waste</li>
+                    <li>Climate change</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Conclusion</h2>
+            <div class="card">
+                <p>
+                    The Aquatic ecosystems are complex systems where abiotic and biotic components interact to sustain
+                    life.
+                    Protecting them is essential for environmental sustainability and human survival.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <h3>Environmental Studies Project | Aquatic Ecosystem</h3>
+            <a href="#back">
+                <h1>Back to Top</h1>
+            </a>
+        </footer>
+
+    </body>
+
+</html>
